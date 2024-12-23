@@ -1,0 +1,56 @@
+﻿  InstructionsScreenUIController.cpp
+E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\UI\Instructions\InstructionsScreenUIController.cpp(61,123): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\UI\Instructions\InstructionsScreenUIController.cpp(61,123): warning C4244:         with
+E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\UI\Instructions\InstructionsScreenUIController.cpp(61,123): warning C4244:         [
+E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\UI\Instructions\InstructionsScreenUIController.cpp(61,123): warning C4244:             T=unsigned int
+E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\UI\Instructions\InstructionsScreenUIController.cpp(61,123): warning C4244:         ]
+E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\UI\Instructions\InstructionsScreenUIController.cpp(61,97): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\UI\Instructions\InstructionsScreenUIController.cpp(61,97): warning C4244:         with
+E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\UI\Instructions\InstructionsScreenUIController.cpp(61,97): warning C4244:         [
+E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\UI\Instructions\InstructionsScreenUIController.cpp(61,97): warning C4244:             T=unsigned int
+E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\UI\Instructions\InstructionsScreenUIController.cpp(61,97): warning C4244:         ]
+E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\UI\Instructions\InstructionsScreenUIController.cpp(73,31): warning C4018: '<': signed/unsigned mismatch
+E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\UI\Instructions\InstructionsScreenUIController.cpp(96,31): warning C4018: '<': signed/unsigned mismatch
+E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\UI\Instructions\InstructionsScreenUIController.cpp(107,31): warning C4018: '<': signed/unsigned mismatch
+E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\UI\Instructions\InstructionsScreenUIController.cpp(118,31): warning C4018: '<': signed/unsigned mismatch
+E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\UI\Instructions\InstructionsScreenUIController.cpp(129,31): warning C4018: '<': signed/unsigned mismatch
+  main.cpp
+  EventService.cpp
+  GameService.cpp
+  Config.cpp
+  GraphicService.cpp
+  CreditsScreenUIController.cpp
+E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\UI\Credits\CreditsScreenUIController.cpp(65,123): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\UI\Credits\CreditsScreenUIController.cpp(65,123): warning C4244:         with
+E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\UI\Credits\CreditsScreenUIController.cpp(65,123): warning C4244:         [
+E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\UI\Credits\CreditsScreenUIController.cpp(65,123): warning C4244:             T=unsigned int
+E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\UI\Credits\CreditsScreenUIController.cpp(65,123): warning C4244:         ]
+E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\UI\Credits\CreditsScreenUIController.cpp(65,97): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\UI\Credits\CreditsScreenUIController.cpp(65,97): warning C4244:         with
+E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\UI\Credits\CreditsScreenUIController.cpp(65,97): warning C4244:         [
+E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\UI\Credits\CreditsScreenUIController.cpp(65,97): warning C4244:             T=unsigned int
+E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\UI\Credits\CreditsScreenUIController.cpp(65,97): warning C4244:         ]
+  MainMenuUIController.cpp
+E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\UI\MainMenu\MainMenuUIController.cpp(53,123): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\UI\MainMenu\MainMenuUIController.cpp(53,123): warning C4244:         with
+E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\UI\MainMenu\MainMenuUIController.cpp(53,123): warning C4244:         [
+E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\UI\MainMenu\MainMenuUIController.cpp(53,123): warning C4244:             T=unsigned int
+E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\UI\MainMenu\MainMenuUIController.cpp(53,123): warning C4244:         ]
+E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\UI\MainMenu\MainMenuUIController.cpp(53,97): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\UI\MainMenu\MainMenuUIController.cpp(53,97): warning C4244:         with
+E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\UI\MainMenu\MainMenuUIController.cpp(53,97): warning C4244:         [
+E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\UI\MainMenu\MainMenuUIController.cpp(53,97): warning C4244:             T=unsigned int
+E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\UI\MainMenu\MainMenuUIController.cpp(53,97): warning C4244:         ]
+  ServiceLocator.cpp
+  SoundService.cpp
+E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\Sound\SoundService.cpp(44,30): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
+  SplashScreenUIController.cpp
+  AnimatedImageView.cpp
+  ButtonView.cpp
+  ImageView.cpp
+E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\UI\UIElement\ImageView.cpp(68,23): warning C4244: '=': conversion from 'float' to 'sf::Uint8', possible loss of data
+  TextView.cpp
+  UIView.cpp
+  UIService.cpp
+  Generating Code...
+  Array-Minesweeper.vcxproj -> E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\Debug\Array-Minesweeper.exe
