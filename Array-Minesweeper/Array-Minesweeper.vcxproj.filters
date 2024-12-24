@@ -87,6 +87,9 @@
     <ClCompile Include="source\Gameplay\Cell\CellView.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="source\Gameplay\Cell\CellModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header\Global\ServiceLocator.h">
@@ -153,9 +156,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="header\Gameplay\GameplayService.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="source\Gameplay\Cell\CellModel.cpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="header\Gameplay\Cell\CellController.h">

@@ -19,6 +19,7 @@ namespace Gameplay
 
 			void initializeButtonImage(float width, float height);
 			const int tile_size = 32;
+			int slice_count = 12;
 
 		public:
 			CellView(CellController* controller);
@@ -27,6 +28,9 @@ namespace Gameplay
 			void initialize();
 			void render();
 			void update();
+
+			//sf::Vector2i getCellPosition();
+			void setCellTexture();
 		};
 	}
 }

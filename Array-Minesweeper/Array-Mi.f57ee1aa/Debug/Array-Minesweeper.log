@@ -1,6 +1,4 @@
-﻿  BoardController.cpp
-  CellView.cpp
-E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\Gameplay\Cell\CellView.cpp(24,51): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\Gameplay\Cell\CellView.cpp(24,36): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  Generating Code...
+﻿  CellView.cpp
+E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\Gameplay\Cell\CellView.cpp(27,51): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\Gameplay\Cell\CellView.cpp(27,36): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   Array-Minesweeper.vcxproj -> E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\Debug\Array-Minesweeper.exe
