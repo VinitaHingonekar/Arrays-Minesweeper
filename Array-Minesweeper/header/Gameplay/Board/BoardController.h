@@ -31,6 +31,8 @@ namespace Gameplay
 			void update();
 			void render();
 			void reset();
+
+			void initializeCells();
 		};
 	}
 }
