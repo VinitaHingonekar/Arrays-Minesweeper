@@ -23,7 +23,7 @@ namespace Gameplay
 			
 
 		public:
-			CellController();
+			CellController(int cell_index);
 			~CellController();
 
 			void initialize(float cell_width, float cell_height);
@@ -31,6 +31,8 @@ namespace Gameplay
 			void update();
 
 			void reset();
+
+			int getCellIndex();
 
 			CellState getCellState();
 			CellValue getCellValue();

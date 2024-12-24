@@ -31,8 +31,9 @@ namespace Gameplay
             CellState cell_state;
             CellValue cell_value;
 
+
         public:
-            CellModel();
+            CellModel(int cell_index);
             ~CellModel();
 
             CellState getCellState();
@@ -44,6 +45,8 @@ namespace Gameplay
             void reset();
 
             //sf::Vector2i getCellPosition();
+            int cell_index;
+            int getCellIndex();
 
         };
 	}

@@ -5,9 +5,9 @@ namespace Gameplay
 {
 	namespace Cell
 	{
-		CellModel::CellModel()
+		CellModel::CellModel(int cell_index)
 		{
-			//Yet to implement
+			this->cell_index = cell_index;
 		}
 
 		CellModel::~CellModel() = default;
@@ -15,6 +15,11 @@ namespace Gameplay
 		CellState CellModel::getCellState()
 		{
 			return cell_state;
+		}
+
+		int CellModel::getCellIndex()
+		{
+			return cell_index;
 		}
 
 		void CellModel::setCellState(CellState state)
