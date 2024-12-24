@@ -5,6 +5,8 @@ namespace Gameplay
 {
 	namespace Board
 	{
+		class BoardView;
+
 		class BoardController
 		{
 		private:
