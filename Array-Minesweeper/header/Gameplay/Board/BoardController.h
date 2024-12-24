@@ -1,4 +1,5 @@
 #pragma once
+#include "BoardView.h"
 
 namespace Gameplay
 {
@@ -10,6 +11,8 @@ namespace Gameplay
 			void createBoard();
 			void destroy();
 			void deleteBoard();
+
+			BoardView* board_view;
 
 		public:
 
