@@ -21,10 +21,12 @@ namespace Gameplay
 
 		void BoardController::createBoard()
 		{
-			//cell = new Gameplay::Cell::CellController();
-			for (int i = 0; i < number_of_columns; i++)
+			for (int a = 0; a < number_of_rows; a++)
 			{
-				cells[i] = new CellController(i); //Passing Cell Index in Cell Controller's constructor
+				for (int b = 0; b < number_of_columns; b++)
+				{
+					board[a][b] = new CellController(sf::Vector2i(a, b));
+				}
 			}
 		}
 
@@ -36,9 +38,12 @@ namespace Gameplay
 
 		void BoardController::deleteBoard()
 		{
-			for (int i = 0; i < number_of_columns; i++)
+			for (int a = 0; a < number_of_rows; a++)
 			{
-				delete(cells[i]);
+				for (int b = 0; b < number_of_columns; b++)
+				{
+					delete board[a][b];
+				}
 			}
 		}
 
@@ -51,26 +56,40 @@ namespace Gameplay
 		void BoardController::update()
 		{
 			board_view->update();
-			for (int i = 0; i < number_of_columns; i++)
+			for (int row = 0; row < number_of_rows; ++row)
 			{
-				cells[i]->update();
+				for (int col = 0; col < number_of_columns; ++col)
+				{
+					board[row][col]->update();
+				}
 			}
 		}
 
 		void BoardController::render()
 		{
 			board_view->render();
-			for (int i = 0; i < number_of_columns; i++)
+			for (int row = 0; row < number_of_rows; ++row)
 			{
-				cells[i]->render();
+				for (int col = 0; col < number_of_columns; ++col)
+				{
+					board[row][col]->render();
+				}
 			}
 		}
 
 		void BoardController::reset()
 		{
-			for (int i = 0; i < number_of_columns; i++)
+			resetBoard();
+		}
+
+		void BoardController::resetBoard()
+		{
+			for (int row = 0; row < number_of_rows; ++row)
 			{
-				cells[i]->reset();
+				for (int col = 0; col < number_of_columns; ++col)
+				{
+					board[row][col]->reset();
+				}
 			}
 		}
 
@@ -79,9 +98,12 @@ namespace Gameplay
 			float cell_width = board_view->getCellWidth();
 			float cell_height = board_view->getCellHeight();
 
-			for (int i = 0; i < number_of_columns; i++)
+			for (int a = 0; a < number_of_rows; a++)
 			{
-				cells[i]->initialize(cell_width, cell_height);
+				for (int b = 0; b < number_of_columns; b++)
+				{
+					board[a][b]->initialize(cell_width, cell_height);
+				}
 			}
 		}
 

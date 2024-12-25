@@ -1,4 +1,5 @@
 #pragma once
+#include <SFML/Graphics.hpp>
 
 namespace Gameplay
 {
@@ -33,7 +34,7 @@ namespace Gameplay
 
 
         public:
-            CellModel(int cell_index);
+            CellModel(sf::Vector2i position);
             ~CellModel();
 
             CellState getCellState();
@@ -44,9 +45,10 @@ namespace Gameplay
 
             void reset();
 
-            //sf::Vector2i getCellPosition();
-            int cell_index;
-            int getCellIndex();
+            sf::Vector2i position;
+            sf::Vector2i getCellPosition();
+            //int cell_index;
+            //int getCellIndex();
 
         };
 	}

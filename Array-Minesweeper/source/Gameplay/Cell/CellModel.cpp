@@ -1,13 +1,14 @@
 #include "../../header/Gameplay/Cell/CellModel.h"
 #include <SFML/Graphics.hpp>
+using namespace sf;
 
 namespace Gameplay
 {
 	namespace Cell
 	{
-		CellModel::CellModel(int cell_index)
+		CellModel::CellModel(Vector2i position)
 		{
-			this->cell_index = cell_index;
+			this->position = position;
 		}
 
 		CellModel::~CellModel() = default;
@@ -17,10 +18,10 @@ namespace Gameplay
 			return cell_state;
 		}
 
-		int CellModel::getCellIndex()
+		/*int CellModel::getCellIndex()
 		{
 			return cell_index;
-		}
+		}*/
 
 		void CellModel::setCellState(CellState state)
 		{
@@ -43,10 +44,10 @@ namespace Gameplay
 			cell_value = CellValue::EMPTY;
 		}
 
-		/*sf::Vector2i CellModel::getCellPosition()
+		sf::Vector2i CellModel::getCellPosition()
 		{
 			return position;
-		}*/
+		}
 
 
 	}

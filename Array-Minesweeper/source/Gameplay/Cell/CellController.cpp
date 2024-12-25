@@ -6,9 +6,9 @@ namespace Gameplay
 {
 	namespace Cell
 	{
-		CellController::CellController(int cell_index)
+		CellController::CellController(Vector2i position)
 		{
-			cell_model = new CellModel(cell_index);
+			cell_model = new CellModel(position);
 			cell_view = new CellView(this);
 		}
 
@@ -43,9 +43,9 @@ namespace Gameplay
 			cell_model->reset();
 		}
 
-		int CellController::getCellIndex()
+		Vector2i CellController::getCellPosition()
 		{
-			return cell_model->cell_index;
+			return cell_model->position;
 		}
 
 		CellState CellController::getCellState()
