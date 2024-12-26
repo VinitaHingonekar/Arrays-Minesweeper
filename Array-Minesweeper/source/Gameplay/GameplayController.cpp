@@ -1,5 +1,6 @@
 #include "../../header/Gameplay/GameplayController.h"
 #include "../../header/Global/ServiceLocator.h"
+#include "../../header/Gameplay/Board/BoardService.h"
 
 using namespace Global;
 
@@ -18,7 +19,7 @@ namespace Gameplay
 
 	void GameplayController::initialize()
 	{
-
+		//board_service = ServiceLocator::getInstance()->getBoardService();
 	}
 
 	void GameplayController::update()
@@ -44,6 +45,11 @@ namespace Gameplay
 	float GameplayController::getRemainingTime()
 	{
 		return remaining_time;
+	}
+
+	int GameplayController::getMinesCount()
+	{
+		return 10;
 	}
 
 }

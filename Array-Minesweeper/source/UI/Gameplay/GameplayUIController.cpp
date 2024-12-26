@@ -24,6 +24,7 @@ namespace UI
 
         void GameplayUIController::createTexts()
         {
+            mine_text = new TextView();
             time_text = new TextView();
         }
 
@@ -34,7 +35,13 @@ namespace UI
 
         void GameplayUIController::initializeTexts()
         {
+            initializeMineText();
             initializeTimeText();
+        }
+
+        void GameplayUIController::initializeMineText()
+        {
+            mine_text->initialize("000", sf::Vector2f(mine_text_left_offset, mine_text_top_offset), FontType::DS_DIGIB, font_size, text_color);
         }
 
         void GameplayUIController::initializeTimeText()
@@ -44,17 +51,32 @@ namespace UI
 
         void GameplayUIController::show()
         {
+            mine_text->show();
             time_text->show();
         }
 
         void GameplayUIController::update()
         {
+            updateMineText();
             updateTimeText();
         }
 
         void GameplayUIController::render()
         {
+            mine_text->render();
             time_text->render();
+        }
+
+        void GameplayUIController::updateMineText()
+        {
+            int mines_count = ServiceLocator::getInstance()->getGameplayService()->getMinesCount();
+
+            std::stringstream stream;
+            stream << std::setw(3) << std::setfill('0') << mines_count;
+            std::string string_mine_count = stream.str();
+
+            mine_text->setText(string_mine_count);
+            mine_text->update();
         }
 
         void GameplayUIController::updateTimeText()
@@ -72,7 +94,7 @@ namespace UI
         void GameplayUIController::destroy()
         {
             //delete (restart_button);
-            //delete (mine_text);
+            delete (mine_text);
             delete (time_text);
         }
 	}
