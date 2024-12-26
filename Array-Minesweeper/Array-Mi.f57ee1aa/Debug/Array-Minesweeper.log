@@ -28,7 +28,7 @@ E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\UI\Credits\Credit
 E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\UI\Credits\CreditsScreenUIController.cpp(65,97): warning C4244:             T=unsigned int
 E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\UI\Credits\CreditsScreenUIController.cpp(65,97): warning C4244:         ]
   GameplayUIController.cpp
-E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\UI\Gameplay\GameplayUIController.cpp(84,32): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\UI\Gameplay\GameplayUIController.cpp(108,32): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
   InstructionsScreenUIController.cpp
 E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\UI\Instructions\InstructionsScreenUIController.cpp(61,123): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
 E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\UI\Instructions\InstructionsScreenUIController.cpp(61,123): warning C4244:         with
