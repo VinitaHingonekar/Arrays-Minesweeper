@@ -6,6 +6,8 @@ E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\Gameplay\Cell\Cel
 E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\Gameplay\Cell\CellView.cpp;E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\Array-Mi.f57ee1aa\Debug\CellView.obj
 E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\Gameplay\GameplayController.cpp;E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\Array-Mi.f57ee1aa\Debug\GameplayController.obj
 E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\Gameplay\GameplayService.cpp;E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\Array-Mi.f57ee1aa\Debug\GameplayService.obj
+E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\Time\TimeService.cpp;E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\Array-Mi.f57ee1aa\Debug\TimeService.obj
+E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\UI\Gameplay\GameplayUIController.cpp;E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\Array-Mi.f57ee1aa\Debug\GameplayUIController.obj
 E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\UI\Instructions\InstructionsScreenUIController.cpp;E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\Array-Mi.f57ee1aa\Debug\InstructionsScreenUIController.obj
 E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\main.cpp;E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\Array-Mi.f57ee1aa\Debug\main.obj
 E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\source\Event\EventService.cpp;E:\Outscal\DataStructures\Minesweeper\Array-Minesweeper\Array-Mi.f57ee1aa\Debug\EventService.obj
