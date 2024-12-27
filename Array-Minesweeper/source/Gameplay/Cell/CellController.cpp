@@ -58,34 +58,20 @@ namespace Gameplay
 			return cell_model->getCellState();
 		}
 
+		/*void CellController::setCellState(CellState state)
+		{
+			cell_model->setCellState(state);
+		}*/
+
 		CellValue CellController::getCellValue()
 		{
 			return cell_model->getCellValue();
 		}
 
-		/*void CellController::openCell()
+		void CellController::setCellValue(CellValue type)
 		{
-			if (cell_model->getCellState() != CellState::FLAGGED)
-			{
-				cell_model->setCellState(CellState::OPEN);
-				ServiceLocator::getInstance()->getSoundService()->playSound(SoundType::BUTTON_CLICK);
-			}
-		}*/
-
-		//void CellController::flagCell()
-		//{
-		//	switch (cell_model->getCellState())
-		//	{
-		//	case::Gameplay::Cell::CellState::FLAGGED:
-		//		cell_model->setCellState(CellState::HIDDEN);
-		//		break;
-		//	case::Gameplay::Cell::CellState::HIDDEN:
-		//		cell_model->setCellState(CellState::FLAGGED);
-		//		break;
-		//	}
-
-		//	//ServiceLocator::getInstance()->getSoundService()->playSound(SoundType::FLAG);
-		//}
+			cell_model->setCellValue(type);
+		}
 
 		void CellController::flagCell()
 		{

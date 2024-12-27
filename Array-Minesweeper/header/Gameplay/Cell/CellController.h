@@ -32,6 +32,7 @@ namespace Gameplay
 
 			CellState getCellState();
 			CellValue getCellValue();
+			void setCellValue(CellValue type);
 			sf::Vector2i getCellPosition();
 
 			void openCell();
