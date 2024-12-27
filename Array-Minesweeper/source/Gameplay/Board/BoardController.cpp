@@ -121,14 +121,6 @@ namespace Gameplay
 			return mines_count - flagged_cells;
 		}
 
-		/*void BoardController::openCell(sf::Vector2i cell_position)
-		{
-			if (board[cell_position.x][cell_position.y]->canOpenCell())
-			{
-				board[cell_position.x][cell_position.y]->openCell();
-			}
-		}*/
-
 		void BoardController::openCell(sf::Vector2i cell_position)
 		{
 			if (board[cell_position.x][cell_position.y]->canOpenCell())
@@ -138,6 +130,8 @@ namespace Gameplay
 					populateBoard(cell_position);
 					board_state = BoardState::PLAYING;
 				}
+
+				processCellValue(cell_position);
 				board[cell_position.x][cell_position.y]->openCell();
 			}
 		}
@@ -191,6 +185,22 @@ namespace Gameplay
 				break;
 			case UI::UIElement::ButtonType::RIGHT_MOUSE_BUTTON:
 				//Will implement in next section
+				break;
+			}
+		}
+
+		void BoardController::processCellValue(sf::Vector2i cell_position)
+		{
+			switch (board[cell_position.x][cell_position.y]->getCellValue())
+			{
+			case::Gameplay::Cell::CellValue::EMPTY:
+				//processEmptyCell(cell_position); 
+				break;
+			case::Gameplay::Cell::CellValue::MINE:
+				//processMineCell(cell_position); 
+				break;
+			default:
+				ServiceLocator::getInstance()->getSoundService()->playSound(SoundType::BUTTON_CLICK);
 				break;
 			}
 		}
