@@ -36,6 +36,8 @@ namespace Gameplay
 
 			void openCell();
 			void flagCell();
+
+			bool canOpenCell();
 		};
 	}
 }
