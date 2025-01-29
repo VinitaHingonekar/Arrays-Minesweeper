@@ -5,6 +5,7 @@ namespace Gameplay
 	namespace Board
 	{
 		using namespace Cell;
+		enum class BoardState;
 
 		BoardService::BoardService()
 		{
@@ -40,6 +41,21 @@ namespace Gameplay
 		void BoardService::resetBoard()
 		{
 			board_controller->reset();
+		}
+
+		void BoardService::showBoard()
+		{
+			board_controller->showBoard();
+		}
+
+		BoardState BoardService::getBoardState()
+		{
+			return board_controller->getBoardState();
+		}
+
+		void BoardService::setBoardState(BoardState state)
+		{
+			board_controller->setBoardState(state);
 		}
 
 		int BoardService::getMinesCount()

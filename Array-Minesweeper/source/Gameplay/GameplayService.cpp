@@ -17,7 +17,7 @@ namespace Gameplay
 
 	void GameplayService::initialize()
 	{
-
+		gameplay_controller->initialize();
 	}
 
 	void GameplayService::update()
@@ -44,5 +44,12 @@ namespace Gameplay
 	{
 		//return gameplay_controller->getMinesCount();
 		return 11;
+	}
+
+	// This is part of the Gameplay Service layer that interacts with the GameplayController.
+	void GameplayService::endGame(GameResult result)
+	{
+		// This function forwards the result of the game to the controller's endGame function.
+		gameplay_controller->endGame(result); // Trigger the endGame logic in the controller.
 	}
 }

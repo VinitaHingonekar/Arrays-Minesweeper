@@ -3,6 +3,8 @@
 
 namespace Gameplay
 {
+	enum class GameResult;
+
 	class GameplayService
 	{
 	private:
@@ -20,5 +22,7 @@ namespace Gameplay
 		float getRemainingTime();
 
 		int getMinesCount();
+
+		void endGame(GameResult result);
 	};
 }

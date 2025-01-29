@@ -4,6 +4,7 @@
 #include "../../../header/Gameplay/Cell/CellModel.h"
 #include "../../../header/Global/ServiceLocator.h"
 #include "../../../header/Sound/SoundService.h"
+#include "../../../header/Gameplay/GameplayController.h"
 
 namespace Gameplay
 {
@@ -12,8 +13,10 @@ namespace Gameplay
 		using namespace Cell;
 		using namespace Global;
 		using namespace Sound;
+		using namespace Gameplay;
 
 		enum class BoardState;
+		enum class GameResult;
 
 		BoardController::BoardController() : random_engine(random_device())
 		{
@@ -121,6 +124,25 @@ namespace Gameplay
 			return mines_count - flagged_cells;
 		}
 
+		void BoardController::showBoard()
+		{
+
+			switch (ServiceLocator::getInstance()->getBoardService()->getBoardState())
+			{
+			case Gameplay::Board::BoardState::FIRST_CELL:
+				populateBoard(sf::Vector2i(0, 0));
+				openAllCells();
+				break;
+			case Gameplay::Board::BoardState::PLAYING:
+				openAllCells();
+				break;
+			case Gameplay::Board::BoardState::COMPLETED:
+				break;
+			default:
+				break;
+			}
+		}
+
 		void BoardController::openCell(sf::Vector2i cell_position)
 		{
 			if (board[cell_position.x][cell_position.y]->canOpenCell())
@@ -138,11 +160,6 @@ namespace Gameplay
 
 		void BoardController::openAllCells()
 		{
-			if (board_state == BoardState::FIRST_CELL)
-			{
-				populateBoard(sf::Vector2i(0, 0));
-			}
-
 			for (int a = 0; a < number_of_rows; ++a)
 			{
 				for (int b = 0; b < number_of_columns; ++b)
@@ -197,7 +214,7 @@ namespace Gameplay
 				processEmptyCell(cell_position); //Handles everything related to opening empty cells
 				break;
 			case::Gameplay::Cell::CellValue::MINE:
-				//processMineCell(cell_position); Yet to implement
+				processMineCell(cell_position);
 				break;
 			default:
 				ServiceLocator::getInstance()->getSoundService()->playSound(SoundType::BUTTON_CLICK);
@@ -209,6 +226,12 @@ namespace Gameplay
 		{
 			ServiceLocator::getInstance()->getSoundService()->playSound(SoundType::BUTTON_CLICK);
 			openEmptyCells(cell_position);
+		}
+
+		void BoardController::processMineCell(sf::Vector2i cell_position)
+		{
+			ServiceLocator::getInstance()->getSoundService()->playSound(SoundType::EXPLOSION);
+			ServiceLocator::getInstance()->getGameplayService()->endGame(Gameplay::GameResult::LOST);
 		}
 
 		void BoardController::flagCell(sf::Vector2i cell_position)
@@ -228,7 +251,7 @@ namespace Gameplay
 			board[cell_position.x][cell_position.y]->flagCell();
 		}
 		
-		BoardController::BoardState BoardController::getBoardState()
+		BoardState BoardController::getBoardState()
 		{
 			return board_state;
 		}

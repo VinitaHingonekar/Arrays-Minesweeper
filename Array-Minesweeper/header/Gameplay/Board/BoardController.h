@@ -10,16 +10,17 @@ namespace Gameplay
 	{
 		class BoardView;
 
+		enum class BoardState
+		{
+			FIRST_CELL,       // The state when the player opens first cell.
+			PLAYING,          // The game is in progress.
+			COMPLETED,    // The game is over.
+		};
+
 		class BoardController
 		{
 		public:
 
-			enum class BoardState
-			{
-				FIRST_CELL,       // The state when the player opens first cell.
-				PLAYING,          // The game is in progress.
-				COMPLETED,    // The game is over.
-			};
 
 			static const int number_of_rows = 9;
 			static const int number_of_columns = 9;
@@ -45,6 +46,7 @@ namespace Gameplay
 			void processCellValue(sf::Vector2i cell_position);
 
 			void processEmptyCell(sf::Vector2i cell_position);
+			void processMineCell(sf::Vector2i cell_position);
 
 			void flagCell(sf::Vector2i cell_position);
 
@@ -67,6 +69,10 @@ namespace Gameplay
 			void populateCells();
 
 			void openEmptyCells(sf::Vector2i cell_position);
+
+			void showBoard();
+
+			//void flagAllMines();
 
 		private:
 			BoardView* board_view;
