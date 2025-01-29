@@ -195,6 +195,9 @@ namespace Gameplay
 
 		void BoardController::processCellInput(Cell::CellController* cell_controller, UI::UIElement::ButtonType button_type)
 		{
+			if (board_state == BoardState::COMPLETED)
+				return;
+
 			switch (button_type)
 			{
 			case UI::UIElement::ButtonType::LEFT_MOUSE_BUTTON:
@@ -333,6 +336,18 @@ namespace Gameplay
 					sf::Vector2i next_cell_position = sf::Vector2i(a + cell_position.x, b + cell_position.y);
 					// Recursively open the neighbouring cell.
 					openCell(next_cell_position);
+				}
+			}
+		}
+
+		void BoardController::flagAllMines()
+		{
+			for (int row = 0; row < number_of_rows; ++row)
+			{
+				for (int col = 0; col < number_of_columns; ++col)
+				{
+					if (board[row][col]->getCellValue() == CellValue::MINE && board[row][col]->getCellState() != CellState::FLAGGED)
+						flagCell(sf::Vector2i(row, col));
 				}
 			}
 		}

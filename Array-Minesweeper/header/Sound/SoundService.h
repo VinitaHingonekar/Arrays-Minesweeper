@@ -7,7 +7,8 @@ namespace Sound
 	{
 		BUTTON_CLICK,
 		FLAG,
-		EXPLOSION
+		EXPLOSION,
+		GAME_WON
 	};
 
 	class SoundService

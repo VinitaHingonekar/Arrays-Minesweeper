@@ -31,7 +31,7 @@ namespace Gameplay
 			int getMinesCount();
 			void processCellInput(Cell::CellController* cell_controller, UI::UIElement::ButtonType button_type);
 
-			//void flagAllMines();
+			void flagAllMines();
 		};
 	}
 }

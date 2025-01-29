@@ -72,7 +72,7 @@ namespace Gameplay
 
 			void showBoard();
 
-			//void flagAllMines();
+			void flagAllMines();
 
 		private:
 			BoardView* board_view;
